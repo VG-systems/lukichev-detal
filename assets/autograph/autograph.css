@@ -1,0 +1,77 @@
+/* Контейнер */
+.creator-neon {
+    margin-top: 12px;
+    font-size: 12px;
+    font-family: system-ui, -apple-system, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 6px; /* Отступ между текстом "Сайт создан" и ссылкой */
+    opacity: 0.8;
+}
+
+/* Обычный текст "Сайт создан" */
+.created-by {
+    color: #d4a05a; /* Используем ваш цвет или серый */
+    font-weight: 400;
+}
+
+/* Сама ссылка - базовое состояние */
+.creator-link {
+    position: relative;
+    text-decoration: none;
+    font-weight: 600; /* Чуть жирнее для читаемости */
+    letter-spacing: 0.3px; /* Элегантный трекинг */
+    
+    /* Градиентный текст (эффект металла) */
+    background: linear-gradient(135deg, #7e8a96 10%, #aab2bb 55%, #7e8a96 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    
+    transition: all 0.5s ease;
+}
+
+/* Эффект при наведении */
+.creator-link:hover {
+    /* Меняем цвет на "Золото/Пламя" или "Чистую сталь" */
+    /* Здесь выбран теплый оттенок, подходящий под искры металла */
+    background: linear-gradient(90deg, #f49c2a 3%, #ffeecf 80%, #d4a05a 100%);
+    background-size: 200% auto;
+    
+    /* Заставляем градиент двигаться */
+    animation: shine 3s linear infinite;
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* Мягкое свечение текста, а не блока */
+    text-shadow: 0 0 12px rgba(212, 160, 90, 0.4);
+    
+    opacity: 1;
+}
+
+/* Тонкая линия подчеркивания, появляющаяся из центра */
+.creator-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #d4a05a, transparent);
+    transition: width 0.4s ease, left 0.4s ease;
+    opacity: 0;
+}
+
+.creator-link:hover::after {
+    width: 100%;
+    left: 0;
+    opacity: 1;
+}
+
+/* Анимация перелива */
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}

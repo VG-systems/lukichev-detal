@@ -1,0 +1,30 @@
+User-agent:*
+
+# --- Что ЗАПРЕЩЕНО индексировать ---
+
+# Служебная папка для SSL-сертификатов
+Disallow: /.well-known/
+
+# Библиотека для отправки почты.
+Disallow: /PHPMailer/
+
+# Скрипты и файлы для разработки/отладки
+Disallow: /send.php
+Disallow: /config.php 
+Disallow: /token.php
+Disallow: /sitemap_admin.php
+
+
+Disallow: /logi_u/
+
+
+
+# Страницы ошибок
+Disallow: /404.html
+Disallow: /error.html
+
+
+
+# --- Указание на карту сайта ---
+Sitemap: https://lukichev-detal.ru/sitemap.xml
+

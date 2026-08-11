@@ -1,0 +1,55 @@
+# ==============================================================================
+# КОНФИГУРАЦИЯ ДЛЯ СТАТИЧЕСКОГО САЙТА (OPEN SERVER)
+# ==============================================================================
+
+# Кодировка
+AddDefaultCharset UTF-8
+
+# Отключаем листинг папок (безопасность)
+Options -Indexes +FollowSymLinks
+
+RewriteEngine On
+RewriteBase /
+
+# 1. Убираем index.html из адреса (чтобы не было дублей)
+RewriteCond %{THE_REQUEST} ^.*/index\.html
+RewriteRule ^(.*)index\.html$ /$1 [R=301,L]
+
+# 2. ЧПУ: Убираем расширение .html из видимого URL
+# Если пользователь введет /about.html -> его перекинет на /about
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L,NE]
+
+# 3. Внутренний подбор: если запрашивают /about -> сервер откроет about.html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# 4. Добавляем слеш в конце для папок (например, для /uslugi/)
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_URI} !/$
+RewriteRule ^(.*)$ $1/ [R=301,L]
+
+# 5. Страница ошибки 404
+ErrorDocument 404 /404.html
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  
+  # Картинки
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType image/avif "access plus 1 year"
+
+  # CSS и JS
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  
+  # Шрифты
+  ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>

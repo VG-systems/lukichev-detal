@@ -1,0 +1,900 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#f8f9fa">
+    <meta name="robots" content="index,follow">
+    <title>Наша организация оказывает услуги в металлообработке по всей России</title>
+    <link rel="canonical" href="https://lukichev-detal.ru/">
+    <meta name="description" content="Профессиональная металлообработка на заказ с доставкой по всей России. Выполняем токарные, фрезерные и сварочные работы по чертежам и образцам. Гарантия точности, соблюдение сроков. Закажите расчет стоимости проекта прямо сейчас!">
+    <meta name="keywords" content="металлообработка, услуги металлообработки, изготовление деталей на заказ, токарные работы, фрезерные работы, детали по чертежам, сварочные работы, обработка металла, металлообработка россия, производство деталей">
+    <link rel="icon" href="https://lukichev-detal.ru/assets/img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://yandex.ru">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lukichev-detal.ru/">
+    <meta property="og:title" content="Наша организация оказывает услуги в металлообработке по всей России">
+    <meta property="og:description" content="Профессиональная металлообработка на заказ с доставкой по всей России. Выполняем токарные, фрезерные и сварочные работы по чертежам и образцам. Гарантия точности, соблюдение сроков. Закажите расчет стоимости проекта прямо сейчас!">
+    
+    <meta property="og:image" content="https://lukichev-detal.ru/assets/img/og/og-main.jpg">
+    <meta property="og:image:secure_url" content="https://lukichev-detal.ru/assets/img/og/og-main.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="675">
+    <meta property="og:site_name" content="ИП Лукичев Д.Н. | Металлообработка в Иваново">
+    <meta property="og:locale" content="ru_RU">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://lukichev-detal.ru/">
+    <meta name="twitter:title" content="Металлообработка в Иваново: изготовление деталей на заказ">
+    <meta name="twitter:description" content="Изготовление деталей из металла по чертежам или образцу. Выполняем токарные, фрезерные, сварочные работы. Гарантия точности и соблюдение сроков.">
+    <meta name="twitter:image" content="https://lukichev-detal.ru/assets/img/og/og-main.jpg">
+    
+    <link rel="stylesheet" href="/assets/css/main-mini.css">
+    
+    <link rel="stylesheet" href="/assets/autograph/autograph.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="/assets/autograph/autograph.css">
+    </noscript>
+	
+	
+    
+     
+    
+    <style>
+/* --- Секции: Логистика и Снабжение --- */
+
+/* Гарантированный отступ сверху для новых секций */
+.section-spacer {
+  margin-top: 60px; /* Увеличенный отступ, чтобы не наезжало */
+  margin-bottom: 60px;
+}
+
+.logistics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.info-block {
+  background: var(--card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 28px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px var(--shadow-color);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.info-block:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+.info-block h3 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 0;
+  margin-bottom: 16px;
+  text-align: left;
+  font-size: 20px;
+}
+
+.info-block p {
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.alert-box {
+  background: rgba(198, 117, 83, 0.1);
+  border-left: 3px solid var(--accent);
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: var(--text-color);
+  margin-top: auto;
+}
+
+/* --- Адаптивная Таблица Цен --- */
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px var(--shadow-color);
+  border: 1px solid var(--border-color);
+}
+
+.pricing-table th, 
+.pricing-table td {
+  padding: 16px 24px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.pricing-table th {
+  background: var(--glass);
+  font-weight: 600;
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+
+.pricing-table td {
+  color: var(--text-muted);
+  font-size: 15px;
+}
+
+.pricing-table .price-col {
+  font-weight: 700;
+  color: var(--text-color);
+  white-space: nowrap;
+  width: 15%;
+}
+
+/* Заголовки категорий внутри таблицы */
+.pricing-table tr.category-row td {
+  background: rgba(0, 0, 0, 0.03);
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 13px;
+  padding-top: 24px;
+  padding-bottom: 12px;
+}
+
+/* Эффект наведения (Desktop) */
+.pricing-table tr:not(.category-row):hover td {
+  background: rgba(0, 0, 0, 0.015);
+  color: var(--text-color);
+}
+
+/* --- МОБИЛЬНЫЙ ВИД (Card View) --- */
+@media screen and (max-width: 768px) {
+  .pricing-table thead {
+    display: none;
+  }
+  .pricing-table, .pricing-table tbody, .pricing-table tr, .pricing-table td {
+    display: block;
+    width: 100%;
+    border: none;
+  }
+  .pricing-table {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+  }
+  /* Карточка */
+  .pricing-table tr:not(.category-row) {
+    background: var(--card);
+    margin-bottom: 12px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 8px var(--shadow-color);
+    padding: 12px 16px;
+  }
+  /* Ячейка внутри карточки */
+  .pricing-table td {
+    padding: 8px 0;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+  .pricing-table tr td:last-child {
+    border-bottom: none;
+  }
+  /* Заголовок слева (data-label) */
+  .pricing-table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--text-muted);
+    text-align: left;
+    margin-right: 16px;
+  }
+  .pricing-table .price-col {
+    color: var(--accent);
+    font-size: 16px;
+    width: auto;
+  }
+  /* Категория на мобильном */
+  .pricing-table tr.category-row {
+    margin-top: 24px;
+    margin-bottom: 8px;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+  }
+  .pricing-table tr.category-row td {
+    background: transparent;
+    color: var(--text-color);
+    padding: 0 0 8px 4px;
+    border-bottom: 2px solid var(--accent);
+    width: fit-content;
+  }
+}
+
+    </style>
+  
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Профессиональная мех.обработка металла",
+            "legalName": "ИП Лукичев Дмитрий Николаевич",
+            "taxID": "372002780120",
+            "identifier": {
+                "@type": "PropertyValue",
+                "name": "ОГРНИП",
+                "value": "321370200033178"
+            },
+            "foundingDate": "2021-07-29",
+            "image": "https://lukichev-detal.ru/assets/img/favicons/favicon.ico",
+            "telephone": "+7 960 504 61 98",
+            "email": "ooomom@yandex.ru",
+            "sameAs": "https://t.me/DimLuk1",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "ул. Некрасова, 102",
+                "addressLocality": "Иваново",
+                "addressRegion": "Ивановская область"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "56.974244",
+                "longitude": "40.949614"
+            },
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "18:00"
+            },
+            "url": "https://lukichev-detal.ru/"
+        }
+    </script>
+    <script>
+        // Блокирующий скрипт для предотвращения "мелькания" темы
+        (function() {
+            function applyTheme(theme) {
+                if (theme === 'dark') {
+                    document.documentElement.classList.add('dark-theme');
+                } else {
+                    document.documentElement.classList.remove('dark-theme');
+                }
+            }
+            try {
+                const savedTheme = localStorage.getItem('theme');
+                if (savedTheme) {
+                    applyTheme(savedTheme);
+                } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    applyTheme('dark');
+                }
+            } catch (e) {}
+        })();
+    </script>
+  
+</head>
+
+<body>
+    <a class="skiplink" href="#main">Перейти к содержимому</a>
+    <a href="tel:+79605046198" class="floating-cta" aria-label="Позвонить для заказа">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+        </svg>
+    </a>
+    <header>
+        <div class="topbar container" role="banner">
+            <a href="/" class="brand" aria-label="МехАрт Иваново - на главную">
+                <div class="logo" aria-hidden="true">
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-label="Иконка токарного патрона">
+                        <title>LOGO - lukichev-detal.ru </title>
+                        <circle cx="12" cy="12" r="11" fill="currentColor" style="opacity: 0.6;" />
+                        <g fill="currentColor" style="opacity: 0.8;">
+                            <circle cx="7.5" cy="7.5" r="1.25" />
+                            <circle cx="16.5" cy="7.5" r="1.25" />
+                            <circle cx="7.5" cy="16.5" r="1.25" />
+                            <circle cx="16.5" cy="16.5" r="1.25" />
+                        </g>
+                        <g fill="currentColor" style="opacity: 0.8;">
+                            <rect x="9" y="3" width="6" height="7" rx="1" />
+                            <rect x="9" y="14" width="6" height="7" rx="1" />
+                            <rect x="3" y="9" width="7" height="6" rx="1" />
+                            <rect x="14" y="9" width="7" height="6" rx="1" />
+                        </g>
+                        <g fill="currentColor">
+                            <path d="M10 9H14L13.5 10.5H10.5L10 9Z" />
+                            <path d="M10 15H14L13.5 13.5H10.5L10 15Z" />
+                            <path d="M9 10V14L10.5 13.5V10.5L9 10Z" />
+                            <path d="M15 10V14L13.5 13.5V10.5L15 10Z" />
+                        </g>
+                    </svg>
+                </div>
+                <div><span>Профессиональная металлообработка</span>
+                    <p>Работаем с клиентами по всей России и СНГ. <br>Организуем доставку транспортными компаниями.</p>
+                </div>
+            </a>
+            <button id="burgerMenuButton" class="burger-menu-button" aria-label="Открыть меню" aria-expanded="false">
+                <svg class="burger-icon" viewBox="0 0 100 80" width="24" height="24">
+                    <rect width="100" height="15" rx="8"></rect>
+                    <rect y="30" width="100" height="15" rx="8"></rect>
+                    <rect y="60" width="100" height="15" rx="8"></rect>
+                </svg>
+                <svg class="close-icon" viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+                </svg>
+            </button>
+            <nav id="mainNav" aria-label="Главное меню">
+                <a class="btn" href="/about/">О нас</a>
+                <a class="btn" href="/uslugi/">Услуги</a>
+                <a class="btn" href="/contact/">Контакты</a>
+                <a class="btn cta" href="/contact/">Сделать заказ</a>
+                <a class="phone-link" href="tel:+79605046198">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" stroke="currentColor" stroke-width="1.5" fill="none" />
+                    </svg> +7 960 504 61 98 </a>
+                <button class="btn theme-toggle" id="themeToggle" aria-label="Переключить тему оформления">
+                    <svg class="sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <main class="container" id="main">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="fade-in-up">
+                <div class="kicker">Металлообработка • вся Россия и СНГ</div>
+                <h1 id="hero-title">Изготовление деталей по чертежам или образцу на заказ</h1>
+                <p class="lead">Выполняем заказы на токарную и фрезерную обработку, сварку и закалку металла. Работаем с промышленными предприятиями и частными клиентами. Изготавливаем от штучных изделий до средних серий.</p>
+                <div class="flex" style="margin-top:24px; flex-wrap: wrap;"><a class="btn cta" href="/contact/">Рассчитать стоимость по чертежу</a><a class="btn" href="/uslugi/">Смотреть все услуги</a></div>
+                <div style="margin-top:32px;display:flex;gap:12px;flex-wrap:wrap">
+                    <div class="card" style="display:flex;flex-direction:row;gap:12px;align-items:center;padding:12px 14px;">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" aria-label="Галочка подтверждения">
+                            <path d="M9 11L12 14L22 4" stroke="#d4a05a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M21 12V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H16" stroke="#9aa0a6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <div>
+                            <div style="font-weight:700">Работа по чертежам</div>
+                            <div style="font-size:13px;color:var(--text-muted)">эскизам, или образцам</div>
+                        </div>
+                    </div>
+                    <div class="card" style="display:flex;flex-direction:row;gap:12px;align-items:center;padding:12px 14px;">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" aria-label="Иконка станка">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" stroke="#9aa0a6" stroke-width="1.8"></path>
+                        </svg>
+                        <div>
+                            <div style="font-weight:700">Свой парк станков</div>
+                            <div style="font-size:13px;color:var(--text-muted)">Токарные, фрезерные, зуборезные, сварочные</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <aside class="hero-card fade-in-up" style="transition-delay: 0.2s;">
+                <div class="accent-lines" aria-hidden="true">
+                    <div class="line l1"></div>
+                    <div class="line l2"></div>
+                </div>
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+                    <div class="chip" title="Локация">
+                        <svg width="14" height="14" viewBox="0 0 24 24" aria-label="Иконка локации">
+                            <path d="M12 2C8.686 2 6 4.686 6 8c0 5.333 6 12 6 12s6-6.667 6-12c0-3.314-2.686-6-6-6z" stroke="#fff" stroke-width="1.2" fill="none" />
+                        </svg> Работаем по России и СНГ
+                    </div>
+                    <div class="chip">От 1 детали до серии</div>
+                </div>
+                <div class="visual" role="img" aria-label="Демонстрация возможностей производства">
+                    <div class="cad" style="padding: 6px; align-items: flex-start;">
+                        <h3 style="margin: 0 0 12px 0; font-size: 16px; text-align: left;">Наши возможности</h3>
+                        <ul class="capabilities-list">
+                            <li>Токарные работы (в т.ч. ЧПУ <b>РМЦ 1000мм</b>)</li>
+                            <li>Фрезерные и зубофрезерные работы</li>
+                            <li>Шлифовальные работы (плоская, круглая)</li>
+                            <li>Закалка металла (объемная и ТВЧ)</li>
+                            <li>Сварка и восстановление деталей</li>
+                            <li>Ремонт узлов, агрегатов и ДВС</li>
+                        </ul>
+                    </div>
+                    <picture style="width:100%;height:100%;object-fit:cover;border-radius:10px;">
+                        <source srcset="/assets/img/main/metallic-part-cnc.avif" type="image/avif">
+                        <source srcset="/assets/img/main/metallic-part-cnc.webp" type="image/webp"><img src="/assets/img/main/metallic-part-cnc.jpg" alt="Металлическая деталь, изготовленная на станке с ЧПУ" width="400" height="400" style="width:100%;height:100%;border-radius:10px;">
+                    </picture>
+                </div>
+            </aside>
+        </section>
+
+       <section class="fade-in-up" aria-label="Каталог услуг">
+            <h2>Мы оказываем услуг в металлообработке</h2>
+            <h3>Работаем по всей России и СНГ</h3>
+            <div class="grid-3">
+                
+                <div class="card">
+                    <div class="card__image-link">
+                        <img src="/assets/img/services/turning.webp" alt="Токарная обработка металлической детали на станке." loading="lazy">
+                    </div>
+                    <h3>
+                        <img src="/assets/img/icons/check.svg" class="service-icon" alt="" width="24" height="24">
+                        Токарные работы
+                    </h3>
+                    <p class="meta">Изготовление валов, втулок, осей, фланцев. Нарезание метрических и дюймовых резьб на станках с ЧПУ и универсальных станках.</p>
+              
+                </div>
+                <div class="card">
+                    <div class="card__image-link">
+                        <img src="/assets/img/services/Frezernye_raboty.avif" alt="Фрезеровка корпусной детали на станке с ЧПУ." loading="lazy">
+                    </div>
+                    <h3>
+                        <img src="/assets/img/icons/check.svg" class="service-icon" alt="" width="24" height="24">
+                        Фрезерные работы
+                    </h3>
+                    <p class="meta">Обработка плоскостей, пазов, уступов и колодцев. Изготовление корпусных деталей на 3-осевых станках с ЧПУ.</p>
+                
+                </div>
+                
+                <div class="card">
+                    <div class="card__image-link">
+                        <img src="/assets/img/services/hardening.webp" alt="Раскаленная докрасна металлическая шестерня в процессе закалки." loading="lazy">
+                    </div>
+                    <h3>
+                        <img src="/assets/img/icons/check.svg" class="service-icon" alt="" width="24" height="24">
+                        Термическая обработка
+                    </h3>
+                    <p class="meta">Объемная закалка в печи и поверхностная закалка ТВЧ для повышения прочности, твердости и износостойкости деталей.</p>
+                </div>
+                
+                <div class="card">
+                
+                    <div class="card__image-link">
+                        <img src="/assets/img/services/Svarochnye_raboty.avif" alt="Сварщик в маске выполняет сварку металлической конструкции." loading="lazy">
+                    </div>
+                     <h3>
+                        <img src="/assets/img/icons/check.svg" class="service-icon" alt="" width="24" height="24">
+                        Сварочные работы
+                    </h3>
+                    <p class="meta">Полуавтоматическая сварка (MIG/MAG) конструкций из черных и нержавеющих сталей. Восстановление деталей наплавкой.</p>
+                </div>
+                
+               
+            </div>
+        </section>
+
+
+
+<!-- БЛОК: Логистика и Снабжение -->
+        <section class="fade-in-up section-spacer" aria-label="Сервис и условия работы">
+            <div class="logistics-grid">
+                
+                <!-- Доставка -->
+                <div class="info-block">
+                    <div>
+                        <h3>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                            Логистика и доставка
+                        </h3>
+                        <p>
+                            Мы понимаем, что география наших заказчиков охватывает всю Россию и страны СНГ. Готовые детали проходят обязательную консервацию и тщательную упаковку (пузырчатая пленка, жесткая обрешетка), что исключает коррозию или механические повреждения в пути. 
+                            <br><br>
+                            Сотрудничаем с надежными транспортными компаниями («Деловые Линии», «СДЭК», «ПЭК», «КИТ»). Организуем отправку груза с нашего производства в Иваново до вашего склада или терминала.
+                        </p>
+                    </div>
+                    <div class="meta" style="font-size: 13px;">
+                        <span style="color: var(--accent);">✓</span> Отправка документов вместе с грузом
+                    </div>
+                </div>
+
+                <!-- Закупка материалов -->
+                <div class="info-block">
+                    <div>
+                        <h3>
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                            Закупка материалов
+                        </h3>
+                        <p>
+                            Работаем как с давальческим сырьем, так и закупаем металлопрокат под ваш проект. Имеем налаженные связи с поставщиками конструкционных, инструментальных и нержавеющих сталей, а также цветных металлов.
+                            <br><br>
+                            Это экономит ваше время на логистику заготовок. Весь закупаемый металл имеет сертификаты качества и проходит входной контроль на соответствие маркам (Ст45, 40Х, 09Г2С, 12Х18Н10Т и др.).
+                        </p>
+                    </div>
+                    <div class="alert-box">
+                        <strong>Важно:</strong> Закупка материала производится исключительно при 100% предоплате стоимости металла.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- БЛОК: Ценообразование -->
+        <section class="section-spacer fade-in-up" aria-labelledby="pricing-title">
+            <h2 id="pricing-title" style="text-align: center;">Прайс-лист на металлообработку</h2>
+            <p class="meta" style="text-align: center; max-width: 700px; margin: 0 auto 32px auto;">
+                В таблице указаны <strong>ориентировочные цены</strong> для ознакомления. Мы держим <strong>стоимость работ на 15% ниже среднерыночной</strong> за счет оптимизации станочного парка. Итоговая цена зависит от сложности чертежа, допусков и размера партии.
+            </p>
+
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>Наименование работ</th>
+                        <th>Ед. изм.</th>
+                        <th>Стоимость (от)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Токарные -->
+                    <tr class="category-row"><td colspan="3">Токарная обработка (Универсал / ЧПУ)</td></tr>
+                    
+                    <tr>
+                        <td data-label="Услуга">Токарная обработка простых валов (Ст3, Ст45)</td>
+                        <td data-label="Ед. изм.">норм/час</td>
+                        <td data-label="Цена" class="price-col">1 300 ₽</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Услуга">Серийная токарная обработка ЧПУ</td>
+                        <td data-label="Ед. изм.">норм/час</td>
+                        <td data-label="Цена" class="price-col">1 500 ₽</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Услуга">Точение конусов, фасонных поверхностей</td>
+                        <td data-label="Ед. изм.">шт.</td>
+                        <td data-label="Цена" class="price-col">350 ₽</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Услуга">Нарезание резьбы (метрическая, дюймовая)</td>
+                        <td data-label="Ед. изм.">шт.</td>
+                        <td data-label="Цена" class="price-col">250 ₽</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Услуга">Проточка тормозных дисков/барабанов (грузовые)</td>
+                        <td data-label="Ед. изм.">шт.</td>
+                        <td data-label="Цена" class="price-col">1 200 ₽</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Услуга">Изготовление штуцеров, ниппелей, переходников</td>
+                        <td data-label="Ед. изм.">шт.</td>
+                        <td data-label="Цена" class="price-col">150 ₽</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Услуга">Обработка крупногабаритных валов (РМЦ 1000мм)</td>
+                        <td data-label="Ед. изм.">норм/час</td>
+                        <td data-label="Цена" class="price-col">1 800 ₽</td>
+                    </tr>
+
+                    <!-- Фрезерные -->
+                    <tr class="category-row"><td colspan="3">Фрезерные работы (Универсальные станки)</td></tr>
+
+                    <tr>
+                        <td data-label="Услуга">Фрезерование плоскостей, уступов, граней</td>
+                        <td data-label="Ед. изм.">норм/час</td>
+                        <td data-label="Цена" class="price-col">1 400 ₽</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Услуга">Шпоночные пазы (на валах и во втулках)</td>
+                        <td data-label="Ед. изм.">шт.</td>
+                        <td data-label="Цена" class="price-col">400 ₽</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Услуга">Координатное сверление отверстий</td>
+                        <td data-label="Ед. изм.">отв.</td>
+                        <td data-label="Цена" class="price-col">50 ₽</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Услуга">Работы с делительной головкой (грани, шлицы)</td>
+                        <td data-label="Ед. изм.">норм/час</td>
+                        <td data-label="Цена" class="price-col">1 600 ₽</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Услуга">Растачивание корпусных деталей</td>
+                        <td data-label="Ед. изм.">шт.</td>
+                        <td data-label="Цена" class="price-col">600 ₽</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Услуга">Фрезеровка лысок под ключ</td>
+                        <td data-label="Ед. изм.">шт.</td>
+                        <td data-label="Цена" class="price-col">150 ₽</td>
+                    </tr>
+
+                    <!-- Зуборезные -->
+                    <tr class="category-row"><td colspan="3">Зуборезные и Зубошлифовальные работы</td></tr>
+
+                    <tr>
+                        <td data-label="Услуга">Нарезка прямозубых шестерен (модуль до 10)</td>
+                        <td data-label="Ед. изм.">зуб</td>
+                        <td data-label="Цена" class="price-col">180 ₽</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Услуга">Нарезка косозубых шестерен</td>
+                        <td data-label="Ед. изм.">зуб</td>
+                        <td data-label="Цена" class="price-col">220 ₽</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Услуга">Нарезка червячных пар (колесо + вал)</td>
+                        <td data-label="Ед. изм.">комплект</td>
+                        <td data-label="Цена" class="price-col">4 500 ₽</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Услуга">Нарезка шлицевых валов (прямобочные/эвольвентные)</td>
+                        <td data-label="Ед. изм.">п.м.</td>
+                        <td data-label="Цена" class="price-col">1 100 ₽</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Услуга">Долбление внутренних шлицов/зубьев</td>
+                        <td data-label="Ед. изм.">шт.</td>
+                        <td data-label="Цена" class="price-col">900 ₽</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Услуга">Зубошлифование (высокий класс точности)</td>
+                        <td data-label="Ед. изм.">норм/час</td>
+                        <td data-label="Цена" class="price-col">2 400 ₽</td>
+                    </tr>
+
+                    <!-- Шлифовка -->
+                    <tr class="category-row"><td colspan="3">Шлифовальные работы</td></tr>
+
+                    <tr>
+                        <td data-label="Услуга">Плоская шлифовка (плиты, ножи, матрицы)</td>
+                        <td data-label="Ед. изм.">норм/час</td>
+                        <td data-label="Цена" class="price-col">1 600 ₽</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Услуга">Круглая шлифовка (валы, штоки, посадки)</td>
+                        <td data-label="Ед. изм.">норм/час</td>
+                        <td data-label="Цена" class="price-col">1 700 ₽</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Услуга">Внутришлифовальные операции</td>
+                        <td data-label="Ед. изм.">норм/час</td>
+                        <td data-label="Цена" class="price-col">1 900 ₽</td>
+                    </tr>
+
+                    <!-- Спец -->
+                    <tr class="category-row"><td colspan="3">Термообработка и Лазерная очистка</td></tr>
+
+                    <tr>
+                        <td data-label="Услуга">Объемная закалка в печи</td>
+                        <td data-label="Ед. изм.">кг</td>
+                        <td data-label="Цена" class="price-col">120 ₽</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Услуга">ТВЧ закалка (поверхностная) валов/шестерен</td>
+                        <td data-label="Ед. изм.">шт.</td>
+                        <td data-label="Цена" class="price-col">600 ₽</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Услуга">Цементация деталей (насыщение углеродом)</td>
+                        <td data-label="Ед. изм.">кг</td>
+                        <td data-label="Цена" class="price-col">350 ₽</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Услуга">Лазерная очистка металла от ржавчины</td>
+                        <td data-label="Ед. изм.">м² / час</td>
+                        <td data-label="Цена" class="price-col">1 800 ₽</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Услуга">Лазерное удаление старой краски</td>
+                        <td data-label="Ед. изм.">м² / час</td>
+                        <td data-label="Цена" class="price-col">2 000 ₽</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Услуга">Сварка аргоном (восстановление деталей)</td>
+                        <td data-label="Ед. изм.">см шва</td>
+                        <td data-label="Цена" class="price-col">100 ₽</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p class="meta" style="margin-top: 16px; font-size: 12px; opacity: 0.7; text-align: right;">
+                * Минимальная сумма заказа — 1 000 руб. Не является публичной офертой.
+            </p>
+        </section>
+
+
+
+ <section id="process" aria-labelledby="process-title" style="margin-top:48px">
+            <div class="fade-in-up">
+                <h2 id="process-title" style="text-align: center;">Процесс работы: от заявки до готовой детали</h2>
+            </div>
+            <div class="grid-4" style="grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));gap:16px;margin-top:24px">
+                <div class="card step fade-in-up" role="article">
+                    <div class="num">1</div>
+                    <div>
+                        <h3 style="font-size: 16px;">Заявка и ТЗ</h3>
+                        <div class="meta">Вы отправляете чертеж или эскиз, мы обсуждаем задачу и материалы.</div>
+                    </div>
+                </div>
+                <div class="card step fade-in-up" role="article" style="transition-delay: 0.1s;">
+                    <div class="num">2</div>
+                    <div>
+                        <h3 style="font-size: 16px;">Расчет и согласование</h3>
+                        <div class="meta">Мы рассчитываем стоимость и сроки, согласовываем с вами.</div>
+                    </div>
+                </div>
+                <div class="card step fade-in-up" role="article" style="transition-delay: 0.2s;">
+                    <div class="num">3</div>
+                    <div>
+                        <h3 style="font-size: 16px;">Изготовление</h3>
+                        <div class="meta">Запускаем деталь в производство на соответствующем оборудовании.</div>
+                    </div>
+                </div>
+                <div class="card step fade-in-up" role="article" style="transition-delay: 0.3s;">
+                    <div class="num">4</div>
+                    <div>
+                        <h3 style="font-size: 16px;">Контроль и отгрузка</h3>
+                        <div class="meta">Проверяем соответствие чертежу, упаковываем и отгружаем заказ.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		
+		
+		
+		
+        
+        
+    </main>
+    
+    
+
+<footer class="container main-footer fade-in-up">
+  <div class="footer-grid">
+    
+    <!-- Колонка 1: Реквизиты -->
+    <div itemscope itemtype="https://schema.org/LocalBusiness">
+      <h4 class="footer" itemprop="name">Реквизиты</h4>
+      <ul class="footer-list">
+        <li>ИП Лукичев Д.Н., г. Иваново</li>
+        <li>ОГРНИП: 321370200033178</li>
+        <li itemprop="taxID">ИНН: 372002780120</li>
+        <li>Тел: <a itemprop="telephone" href="tel:+79605046198" class="footer-link">+7 960 504 61 98</a></li>
+        <li>Email: <a itemprop="email" href="mailto:info@lukichev-detal.ru" class="footer-link">info@lukichev-detal.ru</a></li>
+      </ul>
+      
+      <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress" class="footer-details" style="margin-top: 8px;">
+        <strong>Адрес:</strong> <span itemprop="addressLocality">г. Иваново</span>,
+        <span itemprop="streetAddress">ул. Некрасова, 102</span>
+      </div>
+
+      <div style="margin-top: 12px;">
+        <a href="/privacy/" class="footer-link" style="font-size: 12px;">Политика конфиденциальности</a>
+      </div>
+
+      <!-- Дисклеймер -->
+      <p class="footer-disclaimer">
+        Вся представленная на сайте информация носит информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437(2) Гражданского кодекса РФ.
+      </p>
+
+      <link itemprop="url" href="https://lukichev-detal.ru">
+    </div>
+
+    <!-- Колонка 2: Меню сайта -->
+    <div>
+      <h4 class="footer">Меню сайта</h4>
+      <nav aria-label="Основное меню">
+        <ul class="footer-list">
+          <li><a href="https://lukichev-detal.ru/" class="footer-link">Главная</a></li>
+          <li><a href="https://lukichev-detal.ru/about/" class="footer-link">О нас</a></li>
+          <li><a href="https://lukichev-detal.ru/uslugi/" class="footer-link">Все услуги</a></li>
+          <li><a href="https://lukichev-detal.ru/contact/" class="footer-link">Контакты</a></li>
+        </ul>
+      </nav>
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SiteNavigationElement",
+        "name": "Меню сайта",
+        "url": [
+          "https://lukichev-detal.ru/",
+          "https://lukichev-detal.ru/about/",
+          "https://lukichev-detal.ru/uslugi/",
+          "https://lukichev-detal.ru/contact/",
+          "https://lukichev-detal.ru/privacy/"
+        ]
+      }
+      </script>
+    </div>
+
+  <!-- Колонка 3: Регионы работы -->
+<div>
+  <h4 class="footer">Регионы работы</h4>
+  <nav aria-label="Выбор региона обслуживания">
+    <ul class="footer-list">
+      
+      <!-- Ссылка на региональный хаб -->
+      <li>
+        <a href="https://lukichev-detal.ru/uslugi/ivanovo/" class="footer-link">
+          <!-- Flex выравнивает иконку и текст в одну строку -->
+          <strong style="display: flex; align-items: center; gap: 8px;">
+             <img src="/assets/img/icons/check.svg" class="service-icon" alt="" width="18" height="18" style="margin: 0;">
+             Иваново
+          </strong>
+        </a>
+      </li>
+
+      <!-- В будущем сюда можно добавить: -->
+      <!-- <li><a href="/uslugi/moscow/" class="footer-link">Москва</a></li> -->
+
+    </ul>
+  </nav>
+  
+  <!-- Schema для навигации по регионам -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SiteNavigationElement",
+    "name": "Регионы обслуживания",
+    "description": "Список городов присутствия компании",
+    "url": [
+      "https://lukichev-detal.ru/uslugi/ivanovo/"
+    ]
+  }
+  </script>
+</div>
+
+    <!-- Колонка 4: Соцсети и Инфо -->
+    <div>
+      <h4 class="footer">Мы на связи</h4>
+      <ul class="footer-list" style="margin-bottom: 24px;">
+        <li><a href="https://vk.com/mexobrabotka37" target="_blank" rel="noopener noreferrer" class="footer-link">Группа ВКонтакте</a></li>
+        <li><a href="https://t.me/DimLuk1" target="_blank" rel="noopener noreferrer" class="footer-link">Написать в Telegram</a></li>
+      </ul>
+
+      <h3>О сайте</h3>
+      <p class="footer-details">
+        Профессиональная металлообработка.<br>
+        © <span id="year"></span> ИП Лукичев Д.Н.
+      </p>
+      
+      <!-- Автограф -->
+      <div class="creator-neon">
+        <span class="created-by">Сайт создан:</span>
+        <a href="https://vladimir-gordeev.ru/" target="_blank" rel="noopener noreferrer" class="creator-link">
+          WEB-Мастерская Владимира Гордеева
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+   <div class="toast" id="toast"><svg width="24" height="24" viewBox="0 0 24 24" fill="#d4a05a"><path d="M9 11L12 14L22 4" stroke="#d4a05a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Заявка успешно отправлена!</span></div>
+    <div id="consent-modal" class="modal-overlay" style="display: none;" hidden>
+        <div class="modal-content" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+            <div class="modal-header">
+                <h3 id="modal-title" class="modal-title">Согласие на обработку данных</h3><button id="modal-mute-btn" class="btn modal-mute-btn" aria-label="Отключить звук"><svg class="icon-sound-on" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg><svg class="icon-sound-off" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4V5z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg></button>
+            </div>
+            <p class="meta"> Для отправки заявки необходимо ваше согласие на обработку персональных данных (имя, email, телефон), которые будут использованы исключительно для связи с вами по вашему запросу. </p>
+            <div class="modal-actions"><button id="consent-decline" class="btn">Не даю согласие</button><button id="consent-confirm" class="btn cta">Даю согласие</button></div>
+        </div>
+    </div>
+    <div id="cookie-consent-banner" class="cookie-banner" style="display: none;" hidden>
+        <p class="cookie-banner__text"> Мы используем файлы cookie для улучшения работы сайта, анализа трафика и персонализации. Продолжая использовать сайт, вы соглашаетесь с нашей <a href="/privacy">политикой конфиденциальности</a>. </p><button id="cookie-consent-accept" class="btn cta">Принять</button>
+    </div>
+    <audio id="audio-open" src="/assets/voice/op/OOSPD.opus" preload="auto"></audio>
+    <audio id="audio-success" src="/assets/voice/op/OOBO.opus" preload="auto"></audio>
+    <audio id="audio-cancel" src="/assets/voice/op/OTBOY.opus" preload="auto"></audio>
+    <script src="/assets/js/script.js" defer></script>
+</body>
+
+</html>
